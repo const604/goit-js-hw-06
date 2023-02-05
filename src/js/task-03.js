@@ -13,7 +13,6 @@ const images = [
   },
 ];
 
-console.log(images);
 
 const list = document.querySelector(".gallery");
 
@@ -28,6 +27,3 @@ list.insertAdjacentHTML("afterbegin", makeItems);
 
 list.style.display = "flex";
 list.style.gap = "24px";
-
-
-console.log(list);

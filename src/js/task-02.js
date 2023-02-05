@@ -17,5 +17,3 @@ const ingredientsList = ingredients.map((ingredient) => {
 });
 
 list.prepend(...ingredientsList);
-
-console.log(list);
