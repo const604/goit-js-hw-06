@@ -1,6 +1,6 @@
 const form = document.querySelector("form");
 
-const onFormSubmit = (event) => {
+form.addEventListener("submit", (event) => {
   event.preventDefault();
   const {
     elements: { email, password },
@@ -10,5 +10,4 @@ const onFormSubmit = (event) => {
     ? alert("Всі поля повинні бути заповнені")
     : console.log(`Email: ${email.value}, Password: ${password.value}`);
   event.currentTarget.reset();
-};
-form.addEventListener("submit", onFormSubmit);
+});
