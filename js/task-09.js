@@ -1,3 +1,4 @@
+const bodyRef = document.querySelector("body");
 const button = document.querySelector("button");
 const span = document.querySelector(".color");
 
@@ -7,6 +8,6 @@ button.addEventListener("click", () => {
       .toString(16)
       .padStart(6, 0)}`;
   }
-  span.style.backgroundColor = getRandomHexColor();
-  console.log(span.style.backgroundColor);
+  bodyRef.style.backgroundColor = getRandomHexColor();
+  console.log(bodyRef.style.backgroundColor);
 });
