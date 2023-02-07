@@ -9,5 +9,5 @@ button.addEventListener("click", () => {
       .padStart(6, 0)}`;
   }
   bodyRef.style.backgroundColor = getRandomHexColor();
-  console.log(bodyRef.style.backgroundColor);
+  span.textContent = bodyRef.style.backgroundColor;
 });
