@@ -1,7 +1,8 @@
-const inputRef = document.querySelector("input");
+const inputRef = document.querySelector("#validation-input");
+console.log(inputRef);
 
 inputRef.addEventListener("blur", (event) => {
   event.currentTarget.value.length == inputRef.dataset.length
-    ? (inputRef.style.borderColor = "#4caf50")
-    : (inputRef.style.borderColor = "#f44336");
+    ? inputRef.classList.add("valid").replace("invalid", "valid")
+    : inputRef.classList.add("invalid").replace("valid", "invalid");
 });
